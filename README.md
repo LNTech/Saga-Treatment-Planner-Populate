@@ -19,5 +19,5 @@ Ensure you have the necessary environment set up:
 
 Navigate to the directory containing the script and run it with the following command:
 ```bash
-python populate_database.py --url https://example.com
+python populate_database.py --url https://example.com --username <USERNAME> --password <PASSWORD>
 ```

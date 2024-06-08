@@ -6,7 +6,7 @@ import argparse
 
 
 URL = ""
-auth = None
+AUTH = None
 
 
 def linebreak(length):
@@ -106,7 +106,7 @@ def parse_field(filepath, field, site, customer):
 
 def main():
     """Scans for new map files in ThorvaldAutonomyConfigs"""
-    global auth
+    global AUTH
     global URL
 
     map_root = "ThorvaldAutonomyConfigs/thorvald_autonomy_configs/config/site_files/"
@@ -123,7 +123,7 @@ def main():
     print(welcome_string)
     linebreak(len(welcome_string))
 
-    auth = HTTPBasicAuth(args.username, args.password)
+    AUTH = HTTPBasicAuth(args.username, args.password)
     URL = args.url
 
     for file in listdir(map_root):
